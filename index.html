@@ -1,133 +1,103 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>Liquid Profile</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>luxeyay</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&display=swap" rel="stylesheet">
 
 <style>
 *{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:Arial;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html,body{
+    width:100%;
+    height:100%;
+    overflow:hidden;
+    touch-action:none;
+    font-family:'Comfortaa',sans-serif;
 }
 
 body{
-height:100vh;
-display:flex;
-justify-content:center;
-align-items:center;
-background:#050505;
-overflow:hidden;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:radial-gradient(circle,#252525,#000);
 }
 
-/* LIQUID */
-.blob{
-position:absolute;
-width:500px;
-height:500px;
-background:linear-gradient(120deg,#ffffff22,#ffffff05);
-border-radius:50%;
-filter:blur(70px);
-animation:move 10s infinite alternate ease-in-out;
-}
-
-.blob:nth-child(2){
-width:350px;
-height:350px;
-top:20%;
-left:60%;
-animation-duration:12s;
-}
-
-.blob:nth-child(3){
-width:250px;
-height:250px;
-bottom:10%;
-left:20%;
-animation-duration:14s;
-}
-
-@keyframes move{
-0%{transform:translate(0,0) scale(1);}
-100%{transform:translate(80px,-60px) scale(1.2);}
-}
-
-/* CARD */
 .card{
-position:relative;
-width:340px;
-padding:30px;
-border-radius:18px;
-background:rgba(255,255,255,0.05);
-border:1px solid rgba(255,255,255,0.12);
-backdrop-filter:blur(25px);
-text-align:center;
-color:white;
-box-shadow:0 0 30px rgba(255,255,255,0.05);
+    width:90%;
+    max-width:420px;
+    padding:35px;
+    border-radius:25px;
+    background:rgba(35,35,35,.75);
+    backdrop-filter:blur(15px);
+    border:1px solid rgba(255,255,255,.08);
+    text-align:center;
+    box-shadow:0 0 80px rgba(255,255,255,.06);
 }
 
-.card img{
-width:90px;
-height:90px;
-border-radius:50%;
-object-fit:cover;
-border:2px solid rgba(255,255,255,0.2);
-margin-bottom:12px;
+.avatar{
+    width:120px;
+    height:120px;
+    border-radius:50%;
+    object-fit:cover;
+    border:3px solid rgba(255,255,255,.15);
+    margin-bottom:18px;
 }
 
-.card h2{
-font-size:18px;
-font-weight:500;
+h1{
+    color:#fff;
+    font-size:35px;
+    margin-bottom:8px;
 }
 
-.card p{
-font-size:12px;
-opacity:0.7;
-margin:8px 0 18px;
+p{
+    color:#cfcfcf;
+    margin-bottom:35px;
+    font-size:16px;
 }
 
-/* SOCIAL VERTICAL */
-.links{
-display:flex;
-flex-direction:column;
-gap:10px;
-margin-top:10px;
+.btn{
+    display:block;
+    text-decoration:none;
+    color:#fff;
+    background:rgba(255,255,255,.04);
+    border:1px solid rgba(255,255,255,.08);
+    border-radius:18px;
+    padding:18px;
+    margin:18px 0;
+    transition:.3s;
 }
 
-.links a{
-text-decoration:none;
-color:white;
-font-size:12px;
-padding:10px;
-border-radius:12px;
-border:1px solid rgba(255,255,255,0.15);
-transition:0.3s;
-}
-
-.links a:hover{
-background:white;
-color:black;
+.btn:hover{
+    background:white;
+    color:black;
+    transform:scale(1.03);
 }
 </style>
 </head>
 
 <body>
 
-<div class="blob"></div>
-<div class="blob"></div>
-<div class="blob"></div>
-
 <div class="card">
-<img src="https://i.postimg.cc/BvjMry1x/79f98ce0dc814f1b91fbd75bb6dcc598.jpg" />
-<h2>ᥣᥙ᥊ᥱᥡᥲᥡ</h2>
-<p>᭙ᥱᥣᥴ᥆mᥱ 𝗍᥆ mᥡ ⍴𝗋᥆𝖿іᥣᥱ</p>
 
-<div class="links">
-<a href="https://tiktok.com/@luxeyay#">𝗍іk𝗍᥆k</a>
-<a href="https://discord.gg/KQ3r2XxmhK#">ᑯɪડᥴ᥆ʀᑯ</a>
-<a href="https://www.roblox.com/users/1400852641/profile#">r᥆ᑲᥣ᥆᥊</a>
+<img src="https://i.postimg.cc/BvjMry1x/79f98ce0dc814f1b91fbd75bb6dcc598.jpg" class="avatar">
+
+<h1>ᥣᥙ᥊ᥱᥡᥲᥡ</h1>
+
+<p>᭙ᥱᥣᥴ᥆꧑ᥱ 𝗍᥆ ꧑ᥡ ρ𝗋᥆𝖿іᥣᥱ</p>
+
+<a class="btn" href="https://tiktok.com/@luxeyay">tiktok</a>
+
+<a class="btn" href="https://discord.gg/KQ3r2XxmhK">discord</a>
+
+<a class="btn" href="https://www.roblox.com/users/1400852641/profile">roblox</a>
+
 </div>
 
 </body>
