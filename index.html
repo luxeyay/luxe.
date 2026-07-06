@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Liquid Profile</title>
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial;
+}
+
+body{
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+background:#050505;
+overflow:hidden;
+}
+
+/* LIQUID */
+.blob{
+position:absolute;
+width:500px;
+height:500px;
+background:linear-gradient(120deg,#ffffff22,#ffffff05);
+border-radius:50%;
+filter:blur(70px);
+animation:move 10s infinite alternate ease-in-out;
+}
+
+.blob:nth-child(2){
+width:350px;
+height:350px;
+top:20%;
+left:60%;
+animation-duration:12s;
+}
+
+.blob:nth-child(3){
+width:250px;
+height:250px;
+bottom:10%;
+left:20%;
+animation-duration:14s;
+}
+
+@keyframes move{
+0%{transform:translate(0,0) scale(1);}
+100%{transform:translate(80px,-60px) scale(1.2);}
+}
+
+/* CARD */
+.card{
+position:relative;
+width:340px;
+padding:30px;
+border-radius:18px;
+background:rgba(255,255,255,0.05);
+border:1px solid rgba(255,255,255,0.12);
+backdrop-filter:blur(25px);
+text-align:center;
+color:white;
+box-shadow:0 0 30px rgba(255,255,255,0.05);
+}
+
+.card img{
+width:90px;
+height:90px;
+border-radius:50%;
+object-fit:cover;
+border:2px solid rgba(255,255,255,0.2);
+margin-bottom:12px;
+}
+
+.card h2{
+font-size:18px;
+font-weight:500;
+}
+
+.card p{
+font-size:12px;
+opacity:0.7;
+margin:8px 0 18px;
+}
+
+/* SOCIAL VERTICAL */
+.links{
+display:flex;
+flex-direction:column;
+gap:10px;
+margin-top:10px;
+}
+
+.links a{
+text-decoration:none;
+color:white;
+font-size:12px;
+padding:10px;
+border-radius:12px;
+border:1px solid rgba(255,255,255,0.15);
+transition:0.3s;
+}
+
+.links a:hover{
+background:white;
+color:black;
+}
+</style>
+</head>
+
+<body>
+
+<div class="blob"></div>
+<div class="blob"></div>
+<div class="blob"></div>
+
+<div class="card">
+<img src="https://i.postimg.cc/BvjMry1x/79f98ce0dc814f1b91fbd75bb6dcc598.jpg" />
+<h2>ᥣᥙ᥊ᥱᥡᥲᥡ</h2>
+<p>᭙ᥱᥣᥴ᥆mᥱ 𝗍᥆ mᥡ ⍴𝗋᥆𝖿іᥣᥱ</p>
+
+<div class="links">
+<a href="https://tiktok.com/@luxeyay#">𝗍іk𝗍᥆k</a>
+<a href="https://discord.gg/KQ3r2XxmhK#">ᑯɪડᥴ᥆ʀᑯ</a>
+<a href="https://www.roblox.com/users/1400852641/profile#">r᥆ᑲᥣ᥆᥊</a>
+</div>
+
+</body>
+</html>
